@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Dev" content="DynaSoft Cloud">
+    <title>Customer Portal</title>
+
+    <!--DYNAMIC CSS FILES-->
+
+</head>
+
+<body>
+    <!-- <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+        <div class="scrollbar-inner">
+            <div class="sidenav-header  align-items-center" style="background-color: #172b4d;">
+                <a class="navbar-brand" href="#">
+                    <!--DYNAMIC PORTAL LOG-->
+    </a>
+    </div>
+    </div>
+    </nav> -->
+    <div class="main-content" id="panel">
+        <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+                        <div class="form-group mb-0">
+                            <div class="input-group input-group-alternative input-group-merge">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input class="form-control" placeholder="Search" type="text">
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main"
+                            aria-label="Close">
+                            <span aria-hidden="true">x</span>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav align-items-center  ml-md-auto ">
+                        <li class="nav-item d-xl-none">
+                            <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin"
+                                data-target="#sidenav-main">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-sm-none">
+                            <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                                <i class="ni ni-zoom-split-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <div class="media align-items-center">
+                                    <span class="avatar avatar-sm rounded-circle">
+                                        <img alt="" src="">
+                                    </span>
+                                    <div class="media-body  ml-2  d-none d-lg-block">
+                                        <span class="mb-0 text-sm  font-weight-bold">Admin</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- <div class="dropdown-menu  dropdown-menu-right ">
+                                <div class="dropdown-header noti-title">
+                                    <h6 class="text-overflow m-0">Welcome!</h6>
+                                </div>
+                                <a href="#!" class="dropdown-item">
+                                    <i class="ni ni-single-02"></i>
+                                    <span>My profile</span>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                    <i class="ni ni-settings-gear-65"></i>
+                                    <span>Settings</span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#!" class="dropdown-item">
+                                    <i class="ni ni-user-run"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </div> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header bg-primary pb-6">
+            <div class="container-fluid">
+                <div class="header-body">
+                    <!-- <div class="row align-items-center py-4">
+                        <div class="col-lg-6 col-7">
+                            <h6 class="h2 text-white d-inline-block mb-0">Total</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card card-stats">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Marketing</h5>
+                                            <span class="h2 font-weight-bold mb-0">350,897</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div
+                                                class="icon icon-shape bg-gradient-red text-white rounded-circle badge">
+                                                <i class="ni ni-badge"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-sm">
+                                        <span class="text-nowrap">Since last 3 month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card card-stats">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Subsidiary</h5>
+                                            <span class="h2 font-weight-bold mb-0">2,356</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div
+                                                class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+                                                <i class="ni ni-chart-pie-35"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-sm">
+                                        <span class="text-nowrap">Since last 3 month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card card-stats">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Sales</h5>
+                                            <span class="h2 font-weight-bold mb-0">924</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div
+                                                class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                                                <i class="ni ni-money-coins"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-sm">
+                                        <span class="text-nowrap">Since last 3 month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card card-stats">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Finance</h5>
+                                            <span class="h2 font-weight-bold mb-0">49,65%</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div
+                                                class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
+                                                <i class="ni ni-chart-bar-32"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-sm">
+                                        <span class="text-nowrap">Since last 3 month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-2">
+            <div class="row">
+                <div class="col-xl-2 card-body"></div>
+                <div class="col-xl-8 mx-auto">
+                    <div class="card bg-default">
+                        <div class="card-header bg-transparent">
+                            <div class="row justify-content-md-center">
+                                    <h5 class="h3 text-white mb-0">Stats Graph</h5>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart">
+                                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 card-body"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="table-responsive">
+                            <div class="card-header border-0">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h3 class="mb-0">Details</h3>
+                                    </div>
+                                    <!-- <div class="col text-right">
+                                        <a href="examples/tables.html" class="btn btn-sm btn-primary">See all</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <script>
+                                function tableCreate(completeRecordData) {
+                                    const body = document.body;
+                                    var _tbl = document.createElement("table");
+                                    _tbl.style = "margin-left: auto; margin-right: auto;";
+                                    var tblBody = document.createElement("tbody"); // Decleare tablebody
+                                    tblBody.style = "overflow-x: auto; width: 50%";
+                                    var row = document.createElement("tr"); // this will create a row
+                                    row.style.border = "1px solid black"; //styling
+                                    Object.entries(completeRecordData).forEach(function ([key,
+                                            value
+                                        ]) // this is used to check the key and value against the object sorted in array(following Json format) 
+                                        {
+                                            var cell = document.createElement("td"); // this will create a cell
+                                            var cellText = document.createTextNode(
+                                                key); // this will show key (data) in the cell
+                                            cell.appendChild(cellText); // append key(data) in the cell 
+                                            cell.style.border = "1px solid black"; // styling
+                                            row.appendChild(cell); // append cell into the row
+                                        });
+                                    tblBody.appendChild(row) //append row into the table body
+                                    row = document.createElement(
+                                        "tr"
+                                    ); // from above check how many nbr of row need to create and this will create rows
+                                    Object.entries(completeRecordData).forEach(function ([key,
+                                            value
+                                        ]) // this is used to check the key and value against the object sorted in array(following Json format) 
+                                        {
+                                            var cell = document.createElement("td"); // this will create a cell
+                                            // var cellText = document.createTextNode('InternalId');
+                                            var cellText = document.createTextNode('InternalID: ' + value
+                                                .internalid); // this will show value in the cell
+                                            cell.appendChild(cellText); // append value in the cell
+                                            row.appendChild(cell); // append cell into the row
+                                            cell.style.border = "1px solid black" // styling
+                                        })
+                                    tblBody.appendChild(row); //append row into the table body
+                                    row = document.createElement(
+                                        "tr"
+                                    ); // from above check how many nbr of row need to create and this will create rows
+                                    Object.entries(completeRecordData).forEach(function ([key,
+                                            value
+                                        ]) // this is used to check the key and value against the object sorted in array(following Json format) 
+                                        {
+                                            var cell = document.createElement("td"); // this will create a cell
+                                            var cellText = document.createTextNode('Date: ' + value
+                                                .trandate); // this will show value in the cell
+                                            cell.appendChild(cellText); // append value in the cell
+                                            row.appendChild(cell); // append cell into the row
+                                            cell.style.border = "1px solid black" // styling
+                                        })
+                                    tblBody.appendChild(row); //append row into the table body
+                                    row = document.createElement(
+                                        "tr"
+                                    ); // from above check how many nbr of row need to create and this will create rows
+                                    Object.entries(completeRecordData).forEach(function ([key,
+                                            value
+                                        ]) // this is used to check the key and value against the object sorted in array(following Json format) 
+                                        {
+                                            var cell = document.createElement("td"); // this will create a cell
+                                            var cellText = document.createTextNode('Status: ' + value
+                                                .status); // this will show value in the cell
+                                            cell.appendChild(cellText); // append value in the cell
+                                            row.appendChild(cell); // append cell into the row
+                                            cell.style.border = "1px solid black" // styling
+                                        })
+                                    tblBody.appendChild(row); //append row into the table body
+                                    row = document.createElement(
+                                        "tr"
+                                    ); // from above check how many nbr of row need to create and this will create rows
+                                    Object.entries(completeRecordData).forEach(function ([key,
+                                            value
+                                        ]) // this is used to check the key and value against the object sorted in array(following Json format) 
+                                        {
+                                            var cell = document.createElement("td"); // this will create a cell
+                                            var cellText = document.createTextNode('Currency: ' + value
+                                                .currency); // this will show value in the cell
+                                            cell.appendChild(cellText); // append value in the cell
+                                            row.appendChild(cell); // append cell into the row
+                                            cell.style.border = "1px solid black" // styling
+                                        })
+                                    tblBody.appendChild(row); //append row into the table body
+                                    row = document.createElement(
+                                        "tr"
+                                    ); // from above check how many nbr of row need to create and this will create rows
+                                    Object.entries(completeRecordData).forEach(function ([key,
+                                            value
+                                        ]) // this is used to check the key and value against the object sorted in array(following Json format) 
+                                        {
+                                            var cell = document.createElement("td"); // this will create a cell
+                                            var cellText = document.createTextNode('Amount: ' + value
+                                                .amount); // this will show value in the cell
+                                            cell.appendChild(cellText); // append value in the cell
+                                            row.appendChild(cell); // append cell into the row
+                                            cell.style.border = "1px solid black" // styling
+                                        })
+                                    tblBody.appendChild(row); //append row into the table body
+                                    _tbl.appendChild(tblBody);
+                                    body.appendChild(_tbl);
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <footer class="footer pt-0">
+                <div class="row align-items-center justify-content-lg-between">
+                    <div class="col-lg-6">
+                        <div class="copyright text-center  text-lg-left  text-muted">
+                            &copy; 2020 <a href="https://dynasoftcloud.com/" class="font-weight-bold ml-1"
+                                target="_blank">DynaSoft
+                                Cloud</a>
+                        </div>
+                    </div>
+                </div>
+            </footer> -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js">
+    </script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js ">
+    </script>
+    <script>
+        let key = localStorage.getItem('AUTH');
+        let convertedData = JSON.parse(key);
+        let customerId = convertedData.customerId;
+        let token = convertedData.token;
+        const ACTION_TYPES = {
+            'TABLE': 'TABLE',
+            "GRAPH": 'GRAPH'
+        }
+        fetch(
+                location.href, {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    method: 'POST',
+                    body: JSON.stringify({
+                        customerId: customerId,
+                        token: token,
+                        actionType: ACTION_TYPES.TABLE,
+                    })
+                })
+            .then((response) => response.json())
+            .then((data) => {
+                let completeRecordData = data.data.customerRecord;
+                tableCreate(completeRecordData);
+            });
+        fetch(
+                location.href, {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    method: 'POST',
+                    body: JSON.stringify({
+                        customerId: customerId,
+                        token: token,
+                        actionType: ACTION_TYPES.GRAPH,
+                    })
+                })
+            .then((response) => response.json())
+            .then((data) => {
+                let completeGraphData = data.data.customerRecord;
+                console.log('Graph: ', completeGraphData);
+                var graphArrX = [];
+                var graphArrY = [];
+                for (let i = 0; i < completeGraphData.length; i++) {
+                    var xData = data.data.customerRecord[i].Alongx;
+                    var yData = data.data.customerRecord[i].Alongy;
+
+                    let graphObject = {
+                        'monthNames': xData,
+                        'amountTotals': yData,
+                    }
+                    graphArrX.push(graphObject.monthNames);
+                    graphArrY.push(graphObject.amountTotals);
+                }
+                console.log('graphArrX: ', graphArrX);
+                console.log('graphArrY: ', graphArrY);
+
+                var xValues = graphArrX;
+                var yValues = graphArrY;
+                var barColors = ["purple", "green","blue","orange","brown", "cyan","black","red","yellow","pink","grey","white"];
+
+                 new Chart("myChart", {
+                    type: "bar",
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                            backgroundColor: barColors,
+                            data: yValues
+                        }]
+                    },
+                    options: {
+                        legend: {
+                            display: false,
+                        },
+                        title: {
+                            display: true,
+                            text: "Last 3 Months"
+                        }
+                    }
+                });
+            })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>Customer Portal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!--DYNAMIC CSS FILES-->
+
+</head>
+
+<body class="bg-default">
+  <div class="main-content">
+    <div class="header bg-gradient-primary  pt-lg-5 pb-lg-8 pt-lg-2">
+      <div class="container">
+        <div class="header-body text-center mb-2">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+              <h1 class="text-black">Welcome!</h1>
+              <p class="text-lead text-black">Customer Login Portal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt--8 pb-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          <div class="card bg-secondary border-0 mb-0">
+            <div class="card-body px-lg-4 pt-lg-5 pb-lg-3">
+              <div class="text-center text-muted mb-4">
+                <small>Login with credentials</small>
+              </div>
+              <form role="form" method="POST">
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-merge input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Email" type="email" id="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-merge input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Password" type="password" id="password">
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary my-4" id="login">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row mt-3 pl-9">
+            <div class="col-6">
+              <a href="#" class="text-black"><small>Forgot password?</small></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script>
+  const ACTION_TYPES = {
+    'LOGIN': 'LOGIN'
+  }
+
+  document.querySelector('#login').addEventListener('click', login);
+
+  function login(e) {
+    console.log("handleGetJson");
+    e.preventDefault();
+    const email = '';
+    const password = '';
+    fetch(
+        location.href, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          method: 'POST',
+          body: JSON.stringify({
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value,
+            actionType: ACTION_TYPES.LOGIN,
+          })
+        })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        console.log('URL:', data.data.url);
+        if (data.status == 200) {
+          localStorage.setItem('AUTH', JSON.stringify(data.data));
+          console.log(localStorage.getItem('AUTH'));
+          window.location.replace(`${location.href}&home=T`);
+        } else {
+          alert('Please Enter Valid Email or Password');
+        }
+      });
+  }
+</script>
+</html>
