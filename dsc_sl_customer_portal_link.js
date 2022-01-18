@@ -2,7 +2,7 @@
  * @NApiVersion 2.1
  * @NScriptType Suitelet
  */
-define(['N/search', 'N/crypto', 'N/runtime', 'N/record', 'N/file'], (search, crypto, runtime, record, file) => {
+ define(['N/search', 'N/crypto', 'N/runtime', 'N/record', 'N/file'], (search, crypto, runtime, record, file) => {
     const ACTION_TYPES = {
         'LOGIN': 'LOGIN',
         'TABLE': 'TABLE',
